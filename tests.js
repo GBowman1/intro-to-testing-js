@@ -30,4 +30,13 @@ describe( 'sayHello', function() {
     it('should return string "Hello, Pat!" when Pat is the input', function(){
         expect(sayHello("Pat")).toBe("Hello, Pat!")
     });
+    it('should return "Hello, World!" when executed with no input', function(){
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" when executed with true', function(){
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('should return "Hello, World!" when executed with false', function() {
+        expect(sayHello(false)).toBe("Hello, World!")
+    });
 })
